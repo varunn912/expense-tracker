@@ -74,7 +74,7 @@ Follow the steps below to run the application locally.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/personal-expense-tracker.git
+git clone https://github.com/varunn912/personal-expense-tracker.git
 cd personal-expense-tracker
 ```
 
