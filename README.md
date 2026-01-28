@@ -1,126 +1,193 @@
-<<<<<<< HEAD
 # Personal Expense Tracker
+
 ![Expense Tracker UI](https://github.com/hemantshirsath/Expensetracker/assets/102463335/f31d97f4-4841-44cb-b2af-62286c60a0c9)
-![forecast Expense UI ](https://github.com/hemantshirsath/Expensetracker/assets/102463335/c1188567-39c5-4cc1-8916-24f3d3712ee8)
+![Forecast Expense UI](https://github.com/hemantshirsath/Expensetracker/assets/102463335/c1188567-39c5-4cc1-8916-24f3d3712ee8)
+![Forecast Expense UI 2](https://github.com/hemantshirsath/Expensetracker/assets/102463335/a2088949-c4f6-4d18-ba23-308ce3ad19f4)
+![Expense-wise Report UI](https://github.com/hemantshirsath/Expensetracker/assets/102463335/c3271340-d3ea-4171-9618-04c8c0a98759)
 
-![forecast Expense UI 2](https://github.com/hemantshirsath/Expensetracker/assets/102463335/a2088949-c4f6-4d18-ba23-308ce3ad19f4)
-![report ui Expensewise](https://github.com/hemantshirsath/Expensetracker/assets/102463335/c3271340-d3ea-4171-9618-04c8c0a98759)
+### Django · Machine Learning · Forecasting · Web Application
 
-## Overview
+A **personal expense tracker web application** built using **Django** that helps users record, analyze, and predict their expenses. The system supports intelligent expense categorization and future expense forecasting using machine learning techniques, enabling better budgeting and financial planning.
 
-This is a personal expense tracker web application built using Django. It allows users to log their expenses, categorize them, and provides automated expense categorization and future expense prediction features. This README.md file provides instructions for setting up and running the application on your local machine, as well as some additional information about its features and usage.
+This project demonstrates practical skills in **backend web development, data modeling, ML integration, and user authentication**, making it suitable for **Software Development Engineer (SDE)** and **Full-Stack Developer** roles.
 
-## Features
+---
 
-- **Expense Logging**: Easily log your daily expenses, including the date, description, amount, and category.
+## 🚀 Key Features
 
-- **Automated Expense Categorization**: The application uses machine learning algorithms to automatically categorize expenses based on their descriptions. This makes it easier to track and manage your spending.
+### 💸 Expense Logging
 
-- **Future Expense Prediction**: The application provides predictions for future expenses based on your spending history. This can help you plan your budget more effectively.
+* Log daily expenses with:
 
-- **User Authentication**: Users can create accounts and log in to securely manage their expenses.
+  * Date
+  * Description
+  * Amount
+  * Category
+* Simple and intuitive expense entry workflow
 
-## Setup
+### 🤖 Automated Expense Categorization
 
-To run this application locally, follow these steps:
+* Uses **machine learning algorithms** to classify expenses based on descriptions
+* Reduces manual categorization effort
+* Improves tracking accuracy over time
 
-1. Clone the repository to your local machine:
+### 📈 Future Expense Prediction
 
-   ```bash
-   git clone https://github.com/yourusername/personal-expense-tracker.git
-   ```
+* Predicts future expenses based on historical spending patterns
+* Helps users plan budgets and manage finances proactively
 
-2. Create a virtual environment (optional but recommended):
+### 🔐 User Authentication
 
-   ```bash
-   python -m venv venv
-   ```
+* Secure user registration and login system
+* Each user can manage their own expense data privately
 
-3. Activate the virtual environment:
+---
 
-   - **Windows**:
+## 🛠 Tech Stack
 
-     ```bash
-     venv\Scripts\activate
-     ```
+### Backend
 
-   - **macOS and Linux**:
+* Python
+* Django
 
-     ```bash
-     source venv/bin/activate
-     ```
+### Machine Learning
 
-4. Install the required dependencies:
+* Automated expense classification
+* Expense forecasting models
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Database
 
-5. Apply database migrations:
+* SQLite (default, easily configurable)
 
-   ```bash
-   python manage.py migrate
-   ```
+### Frontend
 
-6. Create a superuser account to access the admin panel:
+* HTML
+* CSS
+* Django Templates
 
-   ```bash
-   python manage.py createsuperuser
-   ```
+---
 
-7. Start the development server:
+## ⚙️ Setup & Installation
 
-   ```bash
-   python manage.py runserver
-   ```
+Follow the steps below to run the application locally.
 
-8. Open your web browser and go to `http://localhost:8000` to access the application.
+### 1️⃣ Clone the Repository
 
-## Usage
+```bash
+git clone https://github.com/yourusername/personal-expense-tracker.git
+cd personal-expense-tracker
+```
 
-1. Create a new account or log in using your superuser account.
+### 2️⃣ Create and Activate Virtual Environment (Recommended)
 
-2. Start logging your expenses by clicking the "Add Expense" button.
+```bash
+python -m venv venv
+```
 
-3. Fill in the expense details, including the date, description, amount, and category. You can also leave the category empty, and the application will attempt to automatically categorize it.
+**Activate the environment:**
 
-4. View your expense history, categorized expenses, and future expense predictions on the dashboard.
+* Windows:
 
-5. To access the admin panel, go to `http://localhost:8000/admin/` and log in with your superuser credentials. From the admin panel, you can manage users, categories, and view the database.
+```bash
+venv\\Scripts\\activate
+```
 
-## Contributing
+* macOS / Linux:
 
-If you'd like to contribute to this project, please follow these steps:
+```bash
+source venv/bin/activate
+```
 
-1. Fork the repository on GitHub.
+### 3️⃣ Install Dependencies
 
-2. Create a new branch for your feature or bug fix:
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   git checkout -b feature-name
-   ```
+### 4️⃣ Apply Database Migrations
 
-3. Make your changes and commit them:
+```bash
+python manage.py migrate
+```
 
-   ```bash
-   git commit -m "Add new feature"
-   ```
+### 5️⃣ Create Superuser (Admin Access)
 
-4. Push your changes to your forked repository:
+```bash
+python manage.py createsuperuser
+```
 
-   ```bash
-   git push origin feature-name
-   ```
+### 6️⃣ Start Development Server
 
-5. Create a pull request on the original repository to propose your changes.
+```bash
+python manage.py runserver
+```
 
-## Acknowledgments
+Open your browser and navigate to:
 
-- Thanks to the Django community for creating such a powerful web framework.
+```
+http://localhost:8000
+```
 
-- The automated expense categorization and prediction features are powered by machine learning models, which were trained using various open-source libraries and datasets.
+---
 
-Feel free to customize and enhance this expense tracker according to your needs. Happy budgeting!
-=======
-# expense-tracker
->>>>>>> 95afa74a25a73c8561011961440bd9a2f59f73c1
+## 📊 Usage
+
+1. Create a new account or log in
+2. Click **Add Expense** to log daily spending
+3. Enter expense details (category can be left empty for auto-categorization)
+4. View:
+
+   * Expense history
+   * Category-wise breakdown
+   * Future expense predictions on the dashboard
+
+### Admin Panel
+
+* Access: `http://localhost:8000/admin/`
+* Manage users, categories, and application data
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Follow the steps below:
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your fork
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## 🙌 Acknowledgments
+
+* Thanks to the **Django community** for the powerful and flexible web framework
+* Machine learning features built using open-source libraries and datasets
+
+---
+
+## 👨‍💻 Author
+
+**Kamshetty Varun**
+B.Tech – Computer Science & Engineering (AI & ML)
+Aspiring Software Development Engineer (SDE)
+
+---
+
+Happy budgeting! 💰
